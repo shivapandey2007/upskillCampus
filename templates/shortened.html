@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shortened URL</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Your Shortened URL</h1>
+        <div class="result-box">
+            <input type="text" id="shortUrl" value="{{ short_url }}" readonly>
+            <button onclick="copyUrl()">Copy</button>
+        </div>
+
+        
+        {% if click_count is defined %}
+        <p>This link has been clicked <strong>{{ click_count }}</strong> times.</p>
+        {% endif %}
+
+        <a href="/">← Shorten another</a>
+    </div>
+</body>
+</html>
