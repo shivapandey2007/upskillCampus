@@ -23,5 +23,5 @@ This is a full-stack web application built using **Flask (Python)** and **MySQL*
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/shivapandey2007/upskillCampus/tree/9a7e010aea93247071fcc83634f7b76e219af89a
+   git clone https://github.com/shivapandey2007/upskillCampus.git
    cd url-shortener
